@@ -1,8 +1,4 @@
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Student\/Documents\/GitHub\/Surfing-site-ev\/assets\/scss\/style\.scss}line{font-family:\000031}}
-* {
-  box-sizing: border-box;
-}
-
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;700&display=swap");
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Student\/Documents\/GitHub\/Surfing-site-ev\/assets\/scss\/_grid\.scss}line{font-family:\000031}}
 .left {
   text-align: left;
@@ -211,6 +207,123 @@
   .hidden-sm {
     display: block;
   }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Student\/Documents\/GitHub\/Surfing-site-ev\/assets\/scss\/_theme\.scss}line{font-family:\000033}}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Student\/Documents\/GitHub\/Surfing-site-ev\/assets\/scss\/_theme\.scss}line{font-family:\0000313}}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display", serif;
+  color: #333;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Student\/Documents\/GitHub\/Surfing-site-ev\/assets\/scss\/_theme\.scss}line{font-family:\0000318}}
+a {
+  color: rgba(35, 36, 40, 0.9);
+  text-decoration: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Student\/Documents\/GitHub\/Surfing-site-ev\/assets\/scss\/_theme\.scss}line{font-family:\0000322}}
+a:hover {
+  color: #5da8ef;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Student\/Documents\/GitHub\/Surfing-site-ev\/assets\/scss\/_theme\.scss}line{font-family:\0000327}}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Student\/Documents\/GitHub\/Surfing-site-ev\/assets\/scss\/_theme\.scss}line{font-family:\0000332}}
+.site-header {
+  padding: 80px 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Student\/Documents\/GitHub\/Surfing-site-ev\/assets\/scss\/_theme\.scss}line{font-family:\0000335}}
+.site-header .site-logo {
+  margin-bottom: 10px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Student\/Documents\/GitHub\/Surfing-site-ev\/assets\/scss\/_theme\.scss}line{font-family:\0000339}}
+.site-header .site-nav {
+  text-transform: uppercase;
+  letter-spacing: 0.4em;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  font-size: 0.7em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Student\/Documents\/GitHub\/Surfing-site-ev\/assets\/scss\/_theme\.scss}line{font-family:\0000346}}
+.site-header .site-nav ul {
+  display: flex;
+  list-style-type: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Student\/Documents\/GitHub\/Surfing-site-ev\/assets\/scss\/_theme\.scss}line{font-family:\0000350}}
+.site-header .site-nav ul li {
+  margin: 0 20px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Student\/Documents\/GitHub\/Surfing-site-ev\/assets\/scss\/_theme\.scss}line{font-family:\0000357}}
+.hero {
+  position: relative;
+  margin-bottom: 150px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Student\/Documents\/GitHub\/Surfing-site-ev\/assets\/scss\/_theme\.scss}line{font-family:\0000361}}
+.hero .hero__text {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  position: absolute;
+  width: 35%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Student\/Documents\/GitHub\/Surfing-site-ev\/assets\/scss\/_theme\.scss}line{font-family:\0000369}}
+.hero .hero__text .info-block__subtitle {
+  text-transform: uppercase;
+  letter-spacing: 0.4em;
+  font-weight: bold;
+  color: #5da8ef;
+  font-size: 0.3em;
+  font-family: "Poppins", sans-serif;
+  display: block;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Student\/Documents\/GitHub\/Surfing-site-ev\/assets\/scss\/_theme\.scss}line{font-family:\0000378}}
+.hero .hero__text .info-block__title--bigger > h1 {
+  font-size: 1.8rem;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Student\/Documents\/GitHub\/Surfing-site-ev\/assets\/scss\/_theme\.scss}line{font-family:\0000384}}
+.hero .hero__text .info-block__body p {
+  font-size: 0.7em;
+  color: #8f8f8f;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Student\/Documents\/GitHub\/Surfing-site-ev\/assets\/scss\/_theme\.scss}line{font-family:\0000398}}
+.quote {
+  text-align: center;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Student\/Documents\/GitHub\/Surfing-site-ev\/assets\/scss\/_theme\.scss}line{font-family:\00003101}}
+.quote::after {
+  content: "";
+  display: block;
+  background-color: #5da8ef;
+  width: 2px;
+  height: 100px;
+  margin: 35px auto 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Student\/Documents\/GitHub\/Surfing-site-ev\/assets\/scss\/_theme\.scss}line{font-family:\00003110}}
+.quote__body {
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  color: #333;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Student\/Documents\/GitHub\/Surfing-site-ev\/assets\/scss\/_theme\.scss}line{font-family:\00003116}}
+.quote__name {
+  text-transform: uppercase;
+  letter-spacing: 0.4em;
+  font-weight: bold;
+  font-size: 0.6rem;
+  font-style: normal;
 }
 
 /*# sourceMappingURL=style.css.map */

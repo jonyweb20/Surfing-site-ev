@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font: 1em $body;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $headings;
+  color: $heading-color;
+}
+
+a {
+  color: $link-color;
+  text-decoration: none;
+
+  &:hover {
+    color: $brand-color;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.site-header {
+  padding: 80px 0;
+
+  .site-logo {
+    margin-bottom: 10px;
+  }
+
+  .site-nav {
+    @include uppercase();
+    display: flex;
+    align-items: center;
+    height: 100%;
+    font-size: 0.7em;
+
+    ul {
+      display: flex;
+      list-style-type: none;
+
+      li {
+        margin: 0 20px;
+      }
+    }
+  }
+}
+
+.hero {
+  position: relative;
+  margin-bottom: 150px;
+
+  .hero__text {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    position: absolute;
+    width: 35%;
+
+    .info-block {
+      &__subtitle {
+        @include uppercase();
+        color: $brand-color;
+        font-size: 0.3em;
+        font-family: $body;
+        display: block;
+      }
+
+      &__title--bigger {
+        > h1 {
+          font-size: 1.8rem;
+        }
+      }
+
+      &__body {
+        p {
+          font-size: 0.7em;
+          color: $info-block-color;
+        }
+      }
+
+    }
+  }
+
+  .hero__img {
+
+  }
+}
+
+.quote {
+  text-align: center;
+
+  &::after {
+    content: "";
+    display: block;
+    background-color: $brand-color;
+    width: 2px;
+    height: 100px;
+    margin: 35px auto 0;
+  }
+
+  &__body {
+    font-family: $headings;
+    font-weight: 400;
+    color: $heading-color;
+  }
+
+  &__name {
+    @include uppercase();
+    font-size: 0.6rem;
+    font-style: normal;
+  }
+}

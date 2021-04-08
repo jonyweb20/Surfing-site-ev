@@ -1,4 +1,5 @@
-@import "variables";
-@import "helpers";
-@import "grid";
-@import "theme";
+@mixin uppercase {
+  text-transform: uppercase;
+  letter-spacing: 0.4em;
+  font-weight: bold;
+}
