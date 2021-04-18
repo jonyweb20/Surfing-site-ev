@@ -1,6 +1,4 @@
-* {
-  box-sizing: border-box; }
-
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;700&display=swap");
 .left {
   text-align: left; }
 
@@ -131,5 +129,169 @@
 
   .hidden-sm {
     display: block; } }
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0; }
+
+body {
+  font: 1em "Poppins", sans-serif; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display", serif;
+  color: #333; }
+
+a {
+  color: rgba(35, 36, 40, 0.9);
+  text-decoration: none; }
+  a:hover {
+    color: #5da8ef; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+.site-header {
+  padding: 80px 0; }
+  .site-header .site-logo {
+    margin-bottom: 10px; }
+  .site-header .site-nav {
+    text-transform: uppercase;
+    letter-spacing: 0.4em;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    font-size: 0.7em; }
+    .site-header .site-nav ul {
+      display: flex;
+      list-style-type: none; }
+      .site-header .site-nav ul li {
+        margin: 0 20px; }
+
+.hero {
+  position: relative;
+  margin-bottom: 150px; }
+  .hero .hero__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    position: absolute;
+    width: 35%; }
+    .hero .hero__text .info-block__subtitle {
+      text-transform: uppercase;
+      letter-spacing: 0.4em;
+      font-weight: bold;
+      color: #5da8ef;
+      font-size: 0.3em;
+      font-family: "Poppins", sans-serif;
+      display: block; }
+    .hero .hero__text .info-block__title--bigger > h1 {
+      font-size: 1.8rem; }
+    .hero .hero__text .info-block__body p {
+      font-size: 0.7em;
+      color: #8f8f8f; }
+  .hero .hero__img::after {
+    content: "FIRST SURFING MAGAZINE";
+    position: absolute;
+    right: -20em;
+    top: 16em;
+    color: black;
+    transform: rotate(-90deg);
+    font-family: "Playfair Display", serif;
+    letter-spacing: 0.8em;
+    font-size: 0.5em; }
+  .hero .hero__icon {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    font-size: 0.3em;
+    color: #8f8f8f;
+    position: relative; }
+    .hero .hero__icon-title {
+      flex: 1;
+      transform: rotate(-90deg); }
+    .hero .hero__icon-bar_right {
+      display: flex;
+      flex-direction: column;
+      flex: 1; }
+
+.quote {
+  text-align: center; }
+  .quote::after {
+    content: "";
+    display: block;
+    background-color: #5da8ef;
+    width: 2px;
+    height: 100px;
+    margin: 35px auto 0; }
+  .quote__body {
+    font-family: "Playfair Display", serif;
+    font-weight: 400;
+    color: #333; }
+  .quote__name {
+    text-transform: uppercase;
+    letter-spacing: 0.4em;
+    font-weight: bold;
+    font-size: 0.6rem;
+    font-style: normal; }
+
+.media__content {
+  display: flex;
+  margin-top: 2em;
+  position: relative; }
+  .media__content .media-info {
+    display: flex;
+    flex-direction: column;
+    width: 114%; }
+    .media__content .media-info .media-text-block {
+      font-size: .7em;
+      padding: .5em 13.6em 0 11em;
+      color: #8f8f8f; }
+      .media__content .media-info .media-text-block-title {
+        display: inline-block;
+        font-family: "Playfair Display", serif;
+        letter-spacing: 1em;
+        font-weight: 500;
+        margin-top: 11em;
+        font-size: .4em;
+        padding-bottom: 1em;
+        border-bottom: 2px solid #5da8ef; }
+  .media__content .media-img {
+    display: flex;
+    position: absolute;
+    left: 10%;
+    top: 2em;
+    width: 64%; }
+    .media__content .media-img .img-block-video {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .media__content .media-img .img-block-video-button {
+        z-index: -1; }
+
+.catalog__wrapper {
+  display: flex;
+  margin-top: 150px; }
+  .catalog__wrapper .catalog__content-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .catalog__wrapper .catalog__content-title--small {
+      color: #5da8ef; }
+  .catalog__wrapper .catalog__content-items {
+    display: flex; }
+    .catalog__wrapper .catalog__content-items .item-card {
+      display: flex;
+      position: relative; }
+      .catalog__wrapper .catalog__content-items .item-card__image {
+        display: flex;
+        position: absolute; }
+        .catalog__wrapper .catalog__content-items .item-card__image--bg {
+          display: flex;
+          position: absolute;
+          z-index: -1;
+          bottom: -1em; }
 
 /*# sourceMappingURL=style.css.map */

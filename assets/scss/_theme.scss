@@ -60,7 +60,8 @@ img {
 
   .hero__text {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
     height: 100%;
     position: absolute;
     width: 35%;
@@ -72,12 +73,14 @@ img {
         font-size: 0.3em;
         font-family: $body;
         display: block;
+
       }
 
       &__title--bigger {
         > h1 {
           font-size: 1.8rem;
         }
+
       }
 
       &__body {
@@ -87,13 +90,40 @@ img {
         }
       }
 
+
     }
   }
-
-  .hero__img {
-
+  .hero__img{
+    &::after{
+      content: "FIRST SURFING MAGAZINE";
+      position: absolute;
+      right: -20em;
+      top: 16em;
+      color: black;
+      transform: rotate(-90deg);
+      font-family: "Playfair Display", serif;
+      letter-spacing: 0.8em;
+      font-size: 0.5em;
+    }
   }
-}
+  .hero__icon {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    font-size: 0.3em;
+    color: $info-block-color;
+    position: relative;
+    &-title{
+      flex: 1;
+      transform: rotate(-90deg);
+    }
+    &-bar_right{
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      }
+    }
+  }
 
 .quote {
   text-align: center;
@@ -119,3 +149,142 @@ img {
     font-style: normal;
   }
 }
+
+.media__content{
+  display: flex;
+  margin-top: 2em;
+  position: relative;
+  .media-info {
+    display: flex;
+    flex-direction: column;
+    width: 114%;
+    .media-text-block{
+      font-size: .7em;
+      padding: 1% 25% 0 21%;
+      color: $info-block-color;
+      &-title {
+        display: inline-block;
+        font-family: "Playfair Display", serif;
+        letter-spacing: 1em;
+        font-weight: 500;
+        margin-top: 11em;
+        font-size: .4em;
+        padding-bottom: 1em;
+        border-bottom: 2px solid $brand-color;
+      }
+    }
+  }
+  .media-img {
+    display: flex;
+    position: absolute;
+    left: 46%;
+    top: 8%;
+    width: 64%;
+    .img-block-video{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &-button{
+        z-index: -1;
+      }
+    }
+  }
+}
+
+.catalog__title-wrapper {
+
+  .catalog__content-title {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    width: 100%;
+    height: 100%;
+    margin-top: 15em;
+    background-image: url("../img/img.png");
+      &--small {
+        color: $brand-color;
+      }
+      &--big{
+
+      }
+  }
+}
+.catalog__content {
+  position: relative;
+  &:after{
+    content: "";
+    position: absolute;
+    width: 1em;
+    height: 1em;
+    border-top: 2px solid;
+    border-right: 2px solid;
+    transform: rotate(45deg);
+    top: 12em;
+    right: 1em;
+  }
+  &:before{
+    content: "";
+    position: absolute;
+    width: 1em;
+    height: 1em;
+    border-left: 2px solid;
+    border-bottom: 2px solid;
+    transform: rotate(45deg);
+    top: 12em;
+    left: -7em;
+  }
+  .item-card {
+    display: flex;
+    position: relative;
+    width: 69%;
+    height: 65%;
+
+    &__image {
+      display: flex;
+      position: relative;
+      &--bg {
+        display: flex;
+        position: absolute;
+        z-index: -1;
+        bottom: -1em;
+        left: -37%;
+      }
+    }
+
+    &__content-text {
+      display: flex;
+      flex-direction: column;
+      width: 61%;
+      align-items: center;
+      position: absolute;
+      left: 53%;
+      top: 9em;
+
+      & p:first-child {
+        font-size: .7em;
+        color: $info-block-color;
+        align-self: flex-start;
+
+      }
+
+      & p:nth-child(2) {
+        font-size: 1.1em;
+        color: $info-block-color;
+      }
+      & p:nth-child(3) {
+        font-size: .7em;
+        color: $info-block-color;
+        color: $price;
+      }
+      & p:last-child {
+        font-size: 0.4em;
+        color: $info-block-color;
+        font-weight: 700;
+      }
+    }
+
+  }
+}
+
+
+
