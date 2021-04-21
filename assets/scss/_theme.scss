@@ -93,8 +93,9 @@ img {
 
     }
   }
-  .hero__img{
-    &::after{
+
+  .hero__img {
+    &::after {
       content: "FIRST SURFING MAGAZINE";
       position: absolute;
       right: -20em;
@@ -106,6 +107,7 @@ img {
       font-size: 0.5em;
     }
   }
+
   .hero__icon {
     display: flex;
     flex-direction: column;
@@ -113,17 +115,19 @@ img {
     font-size: 0.3em;
     color: $info-block-color;
     position: relative;
-    &-title{
+
+    &-title {
       flex: 1;
       transform: rotate(-90deg);
     }
-    &-bar_right{
+
+    &-bar_right {
       display: flex;
       flex-direction: column;
       flex: 1;
-      }
     }
   }
+}
 
 .quote {
   text-align: center;
@@ -150,19 +154,22 @@ img {
   }
 }
 
-.media__content{
+.media__content {
   display: flex;
   margin-top: 2em;
   position: relative;
+
   .media-info {
     display: flex;
     flex-direction: column;
     width: 114%;
-    .media-text-block{
+
+    .media-text-block {
       font-size: .7em;
       padding: 1% 25% 0 21%;
       color: $info-block-color;
-      &-title {
+
+      .list-title {
         display: inline-block;
         font-family: "Playfair Display", serif;
         letter-spacing: 1em;
@@ -174,17 +181,20 @@ img {
       }
     }
   }
+
   .media-img {
     display: flex;
     position: absolute;
     left: 46%;
     top: 8%;
     width: 64%;
-    .img-block-video{
+
+    .img-block-video {
       display: flex;
       justify-content: center;
       align-items: center;
-      &-button{
+
+      &-button {
         z-index: -1;
       }
     }
@@ -194,24 +204,24 @@ img {
 .catalog__title-wrapper {
 
   .catalog__content-title {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
     height: 100%;
     margin-top: 15em;
     background-image: url("../img/img.png");
-      &--small {
-        color: $brand-color;
-      }
-      &--big{
 
-      }
+    &--small {
+      color: $brand-color;
+    }
   }
 }
+
 .catalog__content {
   position: relative;
-  &:after{
+
+  &:after {
     content: "";
     position: absolute;
     width: 1em;
@@ -222,7 +232,8 @@ img {
     top: 12em;
     right: 1em;
   }
-  &:before{
+
+  &:before {
     content: "";
     position: absolute;
     width: 1em;
@@ -233,6 +244,7 @@ img {
     top: 12em;
     left: -7em;
   }
+
   .item-card {
     display: flex;
     position: relative;
@@ -242,6 +254,7 @@ img {
     &__image {
       display: flex;
       position: relative;
+
       &--bg {
         display: flex;
         position: absolute;
@@ -271,11 +284,13 @@ img {
         font-size: 1.1em;
         color: $info-block-color;
       }
+
       & p:nth-child(3) {
         font-size: .7em;
         color: $info-block-color;
         color: $price;
       }
+
       & p:last-child {
         font-size: 0.4em;
         color: $info-block-color;
@@ -286,5 +301,237 @@ img {
   }
 }
 
+.content-list {
+  display: flex;
+  justify-content: center;
 
+  a {
+    padding: .1em;
+    border-bottom: 2px solid $brand-color;
+  }
+}
 
+.article-one {
+  display: flex;
+  margin-top: 15%;
+
+  .article-one-info {
+    display: flex;
+    position: relative;
+    margin-top: 5em;
+
+    &-block {
+      position: relative;
+
+      img {
+        position: absolute;
+        top: 0.1em;
+        z-index: -1;
+      }
+
+      p {
+        font-size: .7em;
+        color: $info-block-color;
+        padding: 3em 2em 3em 0;
+      }
+
+      .list-title {
+        display: inline-block;
+        font-family: "Playfair Display", serif;
+        letter-spacing: 0.7em;
+        font-weight: 500;
+        margin-top: 11em;
+        font-size: .3em;
+        border-bottom: 2px solid $brand-color;
+      }
+
+      .title-big {
+        h1 {
+          margin-top: 36%;
+
+          &:first-letter {
+            display: inline-block;
+            border-bottom: 1px solid $brand-color;
+          }
+        }
+      }
+    }
+  }
+
+  .article-one-img-big {
+    position: absolute;
+    max-width: 100%;
+    z-index: 1;
+  }
+}
+
+.article-two {
+  display: flex;
+  margin-top: 17%;
+  position: relative;
+
+  &-img {
+    max-width: 80%;
+
+    &:before {
+      content: "SURF CAMPS";
+      position: absolute;
+      transform: rotate(-90deg);
+      left: -7.4em;
+      top: 5.5em;
+      letter-spacing: 0.7em;
+      font-size: 10px;
+      font-weight: 700;
+      color: $info-block-color;
+    }
+  }
+
+  &-text-block {
+    position: absolute;
+    left: 75%;
+    top: 16em;
+
+    p {
+      font-size: .7em;
+      color: $info-block-color;
+      padding: 3em 2em 3em 0;
+    }
+
+    .list-title {
+      display: inline-block;
+      font-family: "Playfair Display", serif;
+      letter-spacing: 0.7em;
+      font-weight: 500;
+      margin-top: 11em;
+      font-size: .3em;
+      border-bottom: 2px solid $brand-color;
+    }
+
+  }
+
+}
+
+.Subscribe {
+  &::before {
+    content: "";
+    display: block;
+    background-color: $brand-color;
+    width: 2px;
+    height: 100px;
+    margin: 35px auto;
+  }
+
+  &-block {
+    margin: 0 auto;
+    position: relative;
+
+    &-title {
+      display: flex;
+      justify-content: center;
+    }
+
+    p {
+      text-align: center;
+      font-size: .7em;
+      color: $info-block-color;
+      padding: 1em;
+    }
+
+    &-input {
+      position: relative;
+      width: inherit;
+      height: 4em;
+
+      .block-input-email {
+        width: inherit;
+        height: inherit;
+        letter-spacing: 0.7em;
+        font-size: 7px;
+        font-weight: 900;
+        color: $input-text;
+        padding-left: 2em;
+        background: lightgoldenrodyellow;
+        border: 0;
+      }
+
+      .block-email-send {
+        position: absolute;
+        right: 14px;
+        top: 0;
+        height: inherit;
+        width: 5em;
+        background: no-repeat url("../img/button.png");
+
+        .button-arrow {
+          position: absolute;
+          right: 3em;
+          width: 2em;
+          height: 2em;
+          border-top: 1px solid white;
+          border-right: 1px solid white;
+          transform: rotate(45deg);
+        }
+      }
+    }
+  }
+}
+
+.Contacts {
+  margin-top: 15%;
+  &-block {
+    &__img {
+      margin-left: -9em;
+    }
+    &__info {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      margin-left: -2em;
+      justify-content: space-around;
+      &-one {
+      }
+      &-title-address {
+        margin-left: 2em;
+      }
+      &-list-title {
+        align-items: flex-start;
+        font-family: "Playfair Display", serif;
+        letter-spacing: 0.7em;
+        font-weight: 500;
+        margin-top: 11em;
+        font-size: .3em;
+        color: $brand-color;
+        a{
+          border-bottom: 2px solid $brand-color;
+          padding-bottom: 0.3em;
+          color: $brand-color;
+        }
+      }
+    }
+  }
+}
+
+.site-footer{
+margin-top: 10%;
+  .site-logo{
+    width: 100%;
+    display: flex;
+    justify-content: center;}
+  .site-nav{
+    @include uppercase();
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    font-size: 0.7em;
+    margin-top: 5%;
+    ul {
+      display: flex;
+      list-style-type: none;
+      li {
+        margin: 0 20px;
+      }
+    }
+  }
+
+}

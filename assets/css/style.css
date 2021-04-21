@@ -317,7 +317,7 @@ img {
   padding: 1% 25% 0 21%;
   color: #8f8f8f;
 }
-.media__content .media-info .media-text-block-title {
+.media__content .media-info .media-text-block .list-title {
   display: inline-block;
   font-family: "Playfair Display", serif;
   letter-spacing: 1em;
@@ -425,6 +425,212 @@ img {
   font-size: 0.4em;
   color: #8f8f8f;
   font-weight: 700;
+}
+
+.content-list {
+  display: flex;
+  justify-content: center;
+}
+.content-list a {
+  padding: .1em;
+  border-bottom: 2px solid #5da8ef;
+}
+
+.article-one {
+  display: flex;
+  margin-top: 15%;
+}
+.article-one .article-one-info {
+  display: flex;
+  position: relative;
+  margin-top: 5em;
+}
+.article-one .article-one-info-block {
+  position: relative;
+}
+.article-one .article-one-info-block img {
+  position: absolute;
+  top: 0.1em;
+  z-index: -1;
+}
+.article-one .article-one-info-block p {
+  font-size: .7em;
+  color: #8f8f8f;
+  padding: 3em 2em 3em 0;
+}
+.article-one .article-one-info-block .list-title {
+  display: inline-block;
+  font-family: "Playfair Display", serif;
+  letter-spacing: 0.7em;
+  font-weight: 500;
+  margin-top: 11em;
+  font-size: .3em;
+  border-bottom: 2px solid #5da8ef;
+}
+.article-one .article-one-info-block .title-big h1 {
+  margin-top: 36%;
+}
+.article-one .article-one-info-block .title-big h1:first-letter {
+  display: inline-block;
+  border-bottom: 1px solid #5da8ef;
+}
+.article-one .article-one-img-big {
+  position: absolute;
+  max-width: 100%;
+  z-index: 1;
+}
+
+.article-two {
+  display: flex;
+  margin-top: 17%;
+  position: relative;
+}
+.article-two-img {
+  max-width: 80%;
+}
+.article-two-img:before {
+  content: "SURF CAMPS";
+  position: absolute;
+  transform: rotate(-90deg);
+  left: -7.4em;
+  top: 5.5em;
+  letter-spacing: 0.7em;
+  font-size: 10px;
+  font-weight: 700;
+  color: #8f8f8f;
+}
+.article-two-text-block {
+  position: absolute;
+  left: 75%;
+  top: 16em;
+}
+.article-two-text-block p {
+  font-size: .7em;
+  color: #8f8f8f;
+  padding: 3em 2em 3em 0;
+}
+.article-two-text-block .list-title {
+  display: inline-block;
+  font-family: "Playfair Display", serif;
+  letter-spacing: 0.7em;
+  font-weight: 500;
+  margin-top: 11em;
+  font-size: .3em;
+  border-bottom: 2px solid #5da8ef;
+}
+
+.Subscribe::before {
+  content: "";
+  display: block;
+  background-color: #5da8ef;
+  width: 2px;
+  height: 100px;
+  margin: 35px auto;
+}
+.Subscribe-block {
+  margin: 0 auto;
+  position: relative;
+}
+.Subscribe-block-title {
+  display: flex;
+  justify-content: center;
+}
+.Subscribe-block p {
+  text-align: center;
+  font-size: .7em;
+  color: #8f8f8f;
+  padding: 1em;
+}
+.Subscribe-block-input {
+  position: relative;
+  width: inherit;
+  height: 4em;
+}
+.Subscribe-block-input .block-input-email {
+  width: inherit;
+  height: inherit;
+  letter-spacing: 0.7em;
+  font-size: 7px;
+  font-weight: 900;
+  color: #fffff;
+  padding-left: 2em;
+  background: lightgoldenrodyellow;
+  border: 0;
+}
+.Subscribe-block-input .block-email-send {
+  position: absolute;
+  right: 14px;
+  top: 0;
+  height: inherit;
+  width: 5em;
+  background: no-repeat url("../img/button.png");
+}
+.Subscribe-block-input .block-email-send .button-arrow {
+  position: absolute;
+  right: 3em;
+  width: 2em;
+  height: 2em;
+  border-top: 1px solid white;
+  border-right: 1px solid white;
+  transform: rotate(45deg);
+}
+
+.Contacts {
+  margin-top: 15%;
+}
+.Contacts-block__img {
+  margin-left: -9em;
+}
+.Contacts-block__info {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin-left: -2em;
+  justify-content: space-around;
+}
+.Contacts-block__info-title-address {
+  margin-left: 2em;
+}
+.Contacts-block__info-list-title {
+  align-items: flex-start;
+  font-family: "Playfair Display", serif;
+  letter-spacing: 0.7em;
+  font-weight: 500;
+  margin-top: 11em;
+  font-size: .3em;
+  color: #5da8ef;
+}
+.Contacts-block__info-list-title a {
+  border-bottom: 2px solid #5da8ef;
+  padding-bottom: 0.3em;
+  color: #5da8ef;
+}
+
+.site-footer {
+  margin-top: 10%;
+}
+.site-footer .site-logo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.site-footer .site-nav {
+  text-transform: uppercase;
+  letter-spacing: 0.4em;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  font-size: 0.7em;
+  margin-top: 5%;
+}
+.site-footer .site-nav ul {
+  display: flex;
+  list-style-type: none;
+}
+.site-footer .site-nav ul li {
+  margin: 0 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
