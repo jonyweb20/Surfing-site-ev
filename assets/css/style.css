@@ -343,16 +343,24 @@ img {
   z-index: -1;
 }
 
-.catalog__title-wrapper .catalog__content-title {
+.catalog-title {
+  position: relative;
+}
+.catalog-title-wrapper {
+  position: absolute;
+  top: -10em;
+  left: -9em;
+  right: -9em;
+}
+.catalog-title .catalog__content-title {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
   height: 100%;
   margin-top: 15em;
-  background-image: url("../img/img.png");
 }
-.catalog__title-wrapper .catalog__content-title--small {
+.catalog-title .catalog__content-title--small {
   color: #5da8ef;
 }
 
@@ -434,6 +442,10 @@ img {
 .content-list a {
   padding: .1em;
   border-bottom: 2px solid #5da8ef;
+}
+
+.article {
+  position: relative;
 }
 
 .article-one {
