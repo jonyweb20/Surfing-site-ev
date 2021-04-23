@@ -8,6 +8,7 @@
 
 body {
   font: 1em $body;
+  /*overflow: hidden;*/
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -73,14 +74,12 @@ img {
         font-size: 0.3em;
         font-family: $body;
         display: block;
-
       }
 
       &__title--bigger {
         > h1 {
           font-size: 1.8rem;
         }
-
       }
 
       &__body {
@@ -89,8 +88,6 @@ img {
           color: $info-block-color;
         }
       }
-
-
     }
   }
 
@@ -183,16 +180,17 @@ img {
   }
 
   .media-img {
-    display: flex;
-    position: absolute;
-    left: 46%;
-    top: 8%;
-    width: 64%;
+    margin-top: 6%;
+    margin-left: 6%;
+    width: 105%;
 
     .img-block-video {
       display: flex;
       justify-content: center;
-      align-items: center;
+
+      img {
+        max-width: 128%;
+      }
 
       &-button {
         z-index: -1;
@@ -203,13 +201,6 @@ img {
 
 .catalog-title {
   position: relative;
-
-  &-wrapper {
-    position: absolute;
-    top: -10em;
-    left: -9em;
-    right: -9em;
-  }
 
   .catalog__content-title {
     display: flex;
@@ -227,8 +218,16 @@ img {
 
 }
 
+.catalog-title-wrapper {
+  width: 100%;
+  margin-top: -32%;
+  margin-left: -10%;
+  position: absolute;
+}
+
 .catalog__content {
   position: relative;
+  margin-top: 5%;
 
   &:after {
     content: "";
@@ -238,7 +237,7 @@ img {
     border-top: 2px solid;
     border-right: 2px solid;
     transform: rotate(45deg);
-    top: 12em;
+    top: 26%;
     right: 1em;
   }
 
@@ -250,8 +249,8 @@ img {
     border-left: 2px solid;
     border-bottom: 2px solid;
     transform: rotate(45deg);
-    top: 12em;
-    left: -7em;
+    top: 26%;
+    left: -4em;
   }
 
   .item-card {
@@ -259,6 +258,7 @@ img {
     position: relative;
     width: 69%;
     height: 65%;
+    margin-top: 5%;
 
     &__image {
       display: flex;
@@ -268,19 +268,19 @@ img {
         display: flex;
         position: absolute;
         z-index: -1;
-        bottom: -1em;
-        left: -37%;
+        bottom: -5%;
+        left: -23%;
       }
     }
 
     &__content-text {
       display: flex;
       flex-direction: column;
-      width: 61%;
+      width: 91%;
       align-items: center;
       position: absolute;
       left: 53%;
-      top: 9em;
+      top: 49%;
 
       & p:first-child {
         font-size: .7em;
@@ -313,19 +313,19 @@ img {
 .content-list {
   display: flex;
   justify-content: center;
+  margin-top: 3%;
 
   a {
     padding: .1em;
     border-bottom: 2px solid $brand-color;
   }
 }
-.article{
-  position: relative;
-}
 
 .article-one {
+  position: relative;
   display: flex;
   margin-top: 15%;
+  height: 100%;
 
   .article-one-info {
     display: flex;
@@ -334,8 +334,10 @@ img {
 
     &-block {
       position: relative;
+      padding-bottom: 10%;
 
       img {
+        max-width: 30%;
         position: absolute;
         top: 0.1em;
         z-index: -1;
@@ -352,14 +354,13 @@ img {
         font-family: "Playfair Display", serif;
         letter-spacing: 0.7em;
         font-weight: 500;
-        margin-top: 11em;
         font-size: .3em;
         border-bottom: 2px solid $brand-color;
       }
 
       .title-big {
         h1 {
-          margin-top: 36%;
+          margin-top: 15%;
 
           &:first-letter {
             display: inline-block;
@@ -374,7 +375,15 @@ img {
     position: absolute;
     max-width: 100%;
     z-index: 1;
+
+    img {
+      max-width: 122%;
+    }
   }
+}
+
+.article-title-wrapper {
+  position: absolute;
 }
 
 .article-two {
@@ -383,7 +392,7 @@ img {
   position: relative;
 
   &-img {
-    max-width: 80%;
+    display: flex;
 
     &:before {
       content: "SURF CAMPS";
@@ -401,7 +410,7 @@ img {
   &-text-block {
     position: absolute;
     left: 75%;
-    top: 16em;
+    top: 39%;
 
     p {
       font-size: .7em;
@@ -436,6 +445,7 @@ img {
   &-block {
     margin: 0 auto;
     position: relative;
+    padding-top: 11%;
 
     &-title {
       display: flex;
@@ -545,7 +555,22 @@ img {
     align-items: center;
     height: 100%;
     font-size: 0.7em;
-    margin-top: 5%;
+    padding-top: 3%;
+    ul {
+      display: flex;
+      list-style-type: none;
+      li {
+        margin: 0 20px;
+      }
+    }
+  }
+
+  .list-nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding-top: 3%;
 
     ul {
       display: flex;
@@ -556,5 +581,63 @@ img {
       }
     }
   }
-
 }
+  @media only screen and (max-width: $breakpoint-med) {
+    .info-block__body {
+      font-size: 0.7em;
+      color: $heading-color;
+    }
+    .info-block__slide-menu {
+      margin-left: -31%;
+    }
+
+    .article-two {
+      display: flex;
+      margin-top: 100%;
+      position: relative;
+
+      &-img {
+        display: flex;
+
+        &:before {
+          content: "SURF CAMPS";
+          position: absolute;
+          transform: rotate(-90deg);
+          left: -7.4em;
+          top: 5.5em;
+          letter-spacing: 0.7em;
+          font-size: 10px;
+          font-weight: 700;
+          color: $info-block-color;
+        }
+      }
+
+      &-text-block {
+        position: absolute;
+        left: 0%;
+        top: 100%;
+
+        p {
+          font-size: .7em;
+          color: $info-block-color;
+          padding: 3em 2em 3em 0;
+        }
+
+        .list-title {
+          display: inline-block;
+          font-family: "Playfair Display", serif;
+          letter-spacing: 0.7em;
+          font-weight: 500;
+          margin-top: 0em;
+          font-size: .3em;
+          border-bottom: 2px solid $brand-color;
+        }
+
+      }
+
+    }
+
+    .Subscribe {
+      margin-top: 28%;
+    }
+  }
